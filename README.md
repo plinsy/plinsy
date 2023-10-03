@@ -1,5 +1,9 @@
 <h2 align="left">Hi 👋! My name is Princy and I'm a Software engineer</h2>
 
+<p>
+With over three years of dedicated experience in the software development industry, I am a seasoned Software Engineer known for delivering innovative solutions and driving project success. My passion for technology, combined with a strong foundation in software engineering principles, has allowed me to excel in a variety of challenging environments.
+</p>
+
 ###
 
 <br clear="both">
