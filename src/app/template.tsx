@@ -52,13 +52,13 @@ export default function HomeTemplate({ children }: Props) {
       id: 6,
       title: 'Skills',
       imgSrc: '/assets/img/menu/menu6.png',
-      href: '/skills/'
+      href: '/skills'
     },
     {
       id: 7,
       title: 'Want to talk?',
       imgSrc: '/assets/img/menu/menu7.png',
-      href: '/contact/'
+      href: '/contact'
     }
   ]
   return (

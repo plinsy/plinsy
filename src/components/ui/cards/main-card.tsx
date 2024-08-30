@@ -2,17 +2,19 @@ import { ReactNode } from 'react'
 
 type Props = {
   children: ReactNode
-  orientation?: "H" | "V"
+  orientation?: "H" | "V" | "RH"
 }
 
 const mainCardOrientations = {
   H: 'flex-row',
-  V: 'flex-col'
+  RH: 'flex-row-reverse',
+  V: 'flex-col',
 }
 
 const colorsOrientations = {
   H: 'flex-col',
-  V: 'flex-row'
+  RH: 'flex-col',
+  V: 'flex-row',
 }
 
 const MainCard = ({ children, orientation = "H" }: Props) => {

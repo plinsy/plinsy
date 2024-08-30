@@ -4,8 +4,6 @@ import MainCard from '../../components/ui/cards/main-card'
 type Props = {}
 
 const SkillsPage = (props: Props) => {
-  const email = 'plinsy2@gmail.com'
-  const phoneNumber = '+261347739305'
   const skills = [
     'nodejs',
     'react',
@@ -34,7 +32,7 @@ const SkillsPage = (props: Props) => {
         <h1 className="MainTitle">Technical skills</h1>
         <section className="grid grid-cols-4 gap-8 px-36 py-4">
           {skills.map((skill, key) => (
-            <figure>
+            <figure key={key}>
               <Image
                 src={`/assets/img/icons/${skill}.png`}
                 width={75}
