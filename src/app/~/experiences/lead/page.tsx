@@ -1,4 +1,4 @@
-import ExperienceCard from '../../../components/experience/card'
+import ExperienceCard from '../../../../components/experience/card'
 
 type Props = {}
 

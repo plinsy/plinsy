@@ -1,4 +1,4 @@
-import ExperienceCard from '../../../components/experience/card'
+import ExperienceCard from '../../../../components/experience/card'
 
 type Props = {}
 
@@ -6,7 +6,7 @@ const Page = (props: Props) => {
   const description = (
     <>
       <div className="flex flex-col gap-4">
-        <p>
+        <div>
           My top projects
           <ul className="list-disc pl-16 pr-24">
             <li>
@@ -18,7 +18,7 @@ const Page = (props: Props) => {
               researchers and their work (Django, NextJS)
             </li>
           </ul>
-        </p>
+        </div>
         <p>
           Title of my bachelor Thesis : “Creation of a platform to improve the
           visibility of Malagasy Researchers”

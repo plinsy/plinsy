@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import MainCard from '../../components/ui/cards/main-card'
+import MainCard from '../../../components/ui/cards/main-card'
 
 type Props = {}
 

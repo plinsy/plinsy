@@ -38,7 +38,7 @@ const ExperienceCard = ({
                 <hr className="" />
               </div>
             </div>
-            <p className="Description px-8 py-4">{description}</p>
+            <div className="Description px-8 py-4">{description}</div>
           </div>
         </div>
       </MainCard>
