@@ -41,7 +41,7 @@ const SidebarTemplate = (props: Props) => {
   }
 
   const handleKeyDown = (event: KeyboardEvent): void => {
-    // event.preventDefault()
+    event.preventDefault()
     const key = event.key
     if (key === 'ArrowRight' || key === 'ArrowDown') {
       goForward()

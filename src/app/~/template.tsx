@@ -1,6 +1,6 @@
 'use client'
 
-import { KeyboardEvent, ReactNode, useRef } from 'react'
+import { ReactNode, useEffect, useRef } from 'react'
 import {
   ResizableHandle,
   ResizablePanel,
@@ -16,13 +16,21 @@ const MainTemplate = ({ children }: Props) => {
   const main = useRef<HTMLElement>(null)
   const mainSection = useRef<HTMLElement>(null)
 
-  function handleKeyUp(event: KeyboardEvent<HTMLElement>): void {
+  function handleKeyUp(event: KeyboardEvent): void {
     event.preventDefault()
     const key = event.key
     if (key === 'F5') {
       mainSection.current?.requestFullscreen()
     }
   }
+
+  useEffect(() => {
+    document.addEventListener('keyup', handleKeyUp)
+
+    return () => {
+      document.removeEventListener('keyup', (ev) => {})
+    }
+  }, [])
 
   return (
     <main
@@ -44,7 +52,6 @@ const MainTemplate = ({ children }: Props) => {
           maxSize={85}
           className="Main">
           <section
-            onKeyUp={handleKeyUp}
             ref={mainSection}
             className="flex items-center justify-center align-middle px-24 h-full">
             {children}
